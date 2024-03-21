@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+        <body>
+                <p>
+                Consumo de Amiibo-API de Usuarios
+                </p>
+
+                <div>
+                        <label>Url</label>
+                        <input type="text" id="url">
+                </div>
+                <div>
+                        <label>Name</label>
+			<input type="text" id="name">
+		</div>
+
+		<div>
+			<label>Amiiboseries</label>
+			<input type="text" id="amiiboseries">
+		</div>
+
+		<div> 
+			<label>Gameseries </label>
+			<input type="text" id="gameseries">
+		</div>
+
+		<div>
+                        <label>Type </label>
+                        <input type="text" id="type">
+                </div>
+
+		<button onclick="postAmiibos()"> POST amiibo </button>
+
+		<button onclick="getAmiibos()"> GET amiibos </button>
+
+		<div id="resultado"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="callrestapi.js"></script>
+
+	</body>
+</html>
+
